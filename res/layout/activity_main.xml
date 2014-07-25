@@ -9,35 +9,6 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:text="09:00 - 10:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/TextView01"
-        android:text="10:00 - 11:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView02"
-        android:layout_alignBottom="@+id/TextView02"
-        android:layout_alignLeft="@+id/TextView04"
-        android:text="11:00 - 12:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,206 +18,91 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/TextView06"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView03"
-        android:layout_alignBottom="@+id/TextView03"
-        android:layout_alignLeft="@+id/TextView05"
-        android:text="12:00 - 13:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView05"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/TextView06"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nome1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="35dp"
         android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:onClick="onClick"
+        android:clickable="true" />
 
     <TextView
-        android:id="@+id/TextView01"
+        android:id="@+id/hora1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_toLeftOf="@+id/textView1"
+        android:layout_alignLeft="@+id/nome1"
+        android:layout_below="@+id/nome1"
+        android:text="09:00 - 10:00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/nome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hora1"
+        android:layout_below="@+id/hora1"
+        android:layout_marginTop="60dp"
         android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:onClick="onClick"
+        android:clickable="true"/>
 
     <TextView
-        android:id="@+id/TextView04"
+        android:id="@+id/hora2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/TextView03"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Free Spot"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:layout_alignLeft="@+id/hora1"
+        android:layout_below="@+id/nome2"
+        android:text="10:00 - 11:00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    
 
     <TextView
-        android:id="@+id/TextView07"
+        android:id="@+id/nome3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="53dp"
+        android:layout_alignBaseline="@+id/nome1"
+        android:layout_alignBottom="@+id/nome1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="106dp"
         android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:onClick="onClick"
+        android:clickable="true"/>
 
     <TextView
-        android:id="@+id/TextView08"
+        android:id="@+id/hora3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView07"
-        android:layout_below="@+id/TextView07"
-        android:text="13:00 - 14:00"
+        android:layout_above="@+id/nome2"
+        android:layout_alignLeft="@+id/nome3"
+        android:text="09:00 - 10:00"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
-        android:id="@+id/TextView09"
+        android:id="@+id/nome4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView08"
-        android:layout_alignBottom="@+id/TextView08"
-        android:layout_alignLeft="@+id/TextView10"
-        android:text="14:00 - 15:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView10"
-        android:layout_alignBottom="@+id/TextView10"
-        android:layout_alignLeft="@+id/TextView03"
+        android:layout_alignBottom="@+id/nome2"
+        android:layout_alignLeft="@+id/hora3"
         android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:onClick="onClick"
+        android:clickable="true"/>
 
     <TextView
-        android:id="@+id/TextView12"
+        android:id="@+id/hora4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView09"
-        android:layout_alignBottom="@+id/TextView09"
-        android:layout_alignLeft="@+id/TextView11"
-        android:text="15:00 - 16:00"
+        android:layout_alignBaseline="@+id/hora2"
+        android:layout_alignBottom="@+id/hora2"
+        android:layout_alignLeft="@+id/nome4"
+        android:text="10:00 - 11:00"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView11"
-        android:layout_alignBottom="@+id/TextView11"
-        android:layout_alignLeft="@+id/TextView06"
-        android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/TextView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView12"
-        android:layout_alignBottom="@+id/TextView12"
-        android:layout_alignLeft="@+id/TextView13"
-        android:text="16:00 - 17:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView08"
-        android:layout_centerVertical="true"
-        android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/TextView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView15"
-        android:layout_below="@+id/TextView15"
-        android:text="00:00 - 00:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/TextView16"
-        android:layout_toLeftOf="@+id/textView1"
-        android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/TextView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView16"
-        android:layout_alignBottom="@+id/TextView16"
-        android:layout_alignLeft="@+id/TextView17"
-        android:text="00:00 - 00:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView17"
-        android:layout_alignBottom="@+id/TextView17"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/TextView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView18"
-        android:layout_alignBottom="@+id/TextView18"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="00:00 - 00:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/TextView20"
-        android:layout_alignLeft="@+id/TextView14"
-        android:text="Activity name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/TextView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView20"
-        android:layout_alignBottom="@+id/TextView20"
-        android:layout_alignLeft="@+id/TextView21"
-        android:text="00:00 - 00:00"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/TextView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/TextView07"
-        android:layout_alignBottom="@+id/TextView07"
-        android:layout_alignLeft="@+id/TextView02"
-        android:text="Free spot"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
