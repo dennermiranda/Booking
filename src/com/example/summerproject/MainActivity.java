@@ -18,7 +18,11 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		fp = new FeedParser();
-		Resultado aula1 = null, aula2=null, aula3=null, aula4=null;
+		Resultado aula1, aula2, aula3, aula4;
+		aula1 = new Resultado("","1");
+		aula2 = new Resultado("","2");
+		aula3 = new Resultado("","3");
+		aula4 = new Resultado("", "4");
 		//passando do json q ele pega pra um objeto intermediario
 		try {
 			fp.parseJSON(aula1, 1);
